@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'uniFont';
-    src: url(/assets/fonts/DINNextLTPro-Regular.otf);
+    src: url(../assets/fonts/DINNextLTPro-Regular.otf) format('opentype') local('uniFont');
 }
 /* Animation container */
 #tanim{
@@ -10,20 +10,20 @@
 }
 
 .mm-h1 {
-    font-family: 'uniFont';
+    font-family: 'uniFont', sans-serif;
     padding: 0;
     margin: 0 auto;
     line-height: 1.8;
     color: whitesmoke;
-    font-size: 2vmin;
+    font-size: 1.4vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .mm-all-btn{
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 2.5vh;
+    width: 2.5vh;
     cursor: pointer;
     border-radius: 50%;
     animation: pulse 1.5s infinite;
@@ -33,13 +33,15 @@
 }
 
 .mm-all-info {
+    height: auto;
+    width: auto;
     background-color: whitesmoke;
     color: black;
-    font-family: 'uniFont';
-    font-size: 0.5rem;
-    border: 2px solid whitesmoke;
+    font-family: 'uniFont', sans-serif;
+    font-size: 0.9vh;
     z-index: 99;
     opacity: 0;
+    padding: 0.1vh 0.1vh 0.1vh 2vh;
 }
 
 #mm-first-btn {
@@ -54,7 +56,7 @@
     position: absolute;
     top:71%;
     left: 20%;
-    padding: 0.5vmin 0.5vmin 0.5vmin 2vmin;
+    
 }
 
 #mm-second-btn {
@@ -67,9 +69,9 @@
     width: auto;
     height: auto;
     position: absolute;
-    top:17.5%;
+    top:18%;
     left: 33%;
-    padding: 0.5vmin 0.5vmin 0.5vmin 2vmin;
+    
 }
 
 /* Textbox visibility */
@@ -93,41 +95,68 @@
 
  @media only screen and (min-width: 481px ) {
     .mm-all-info {
-        font-size: 0.7rem;
-        
+        font-size: 1vh;
+        padding: 0.3vh 0.3vh 0.3vh 2vh;
     }
     .mm-all-btn {
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 2.5vh;
+        width: 2.5vh;
     }
+    .mm-h1 {
+        font-size: 1.5vh;
+        line-height: 1.8;
+
+    }
+
  }
 
  @media only screen and (min-width: 769px ) {
     .mm-all-info {
-        font-size: 0.9rem;
+        font-size: 1.5vh;
+        padding: 0.4vh 0.4vh 0.4vh 3vh;
     }
     .mm-all-btn {
-        height: 1.6rem;
-        width: 1.6rem;
+        height: 3.5vh;
+        width: 3.5vh;
+        line-height: 1.8;
     }
+
+    .mm-h1 {
+        font-size: 1.8vh;
+    }
+
  }
 
  @media only screen and (min-width: 1025px ) {
     .mm-all-info {
-        font-size: 1.1rem;
+        font-size: 2vh;
+        padding: 0.4vh 0.4vh 0.4vh 3vh;
     }
     .mm-all-btn {
-        height: 1.8rem;
-        width: 1.8rem;
+        height: 4vh;
+        width: 4vh;
+        line-height: 1.8;
+    }
+
+    .mm-h1 {
+        font-size: 2.5vh;
+        line-height: 1.8;
     }
  }
 
  @media only screen and (min-width: 1201px ) {
     .mm-all-info {
-        font-size: 1.3rem;
+        font-size: 2.5vh;
+        padding: 0.4vh 0.4vh 0.4vh 3.5vh;
     }
     .mm-all-btn {
-        height: 2rem;
-        width: 2rem;
+        height: 5vh;
+        width: 5vh;
+        line-height: 1.8;
     }
- }
+
+    .mm-h1 {
+        font-size: 3vh;
+        line-height: 1.8;
+    }
+}
