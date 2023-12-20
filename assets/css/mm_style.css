@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'DINNextLTPro';
+    src: url(/assets/fonts/DINNextLTPro-Regular.otf);
+}
+/* Animation container */
+#tanim{
+    max-width: 3000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mm-h1 {
+    font-family: 'DINNextLTPro', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: whitesmoke;
+    font-size: 2vmin;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mm-all-btn{
+    height: 0.8rem;
+    width: 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    background: #de0466;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.mm-all-info {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'DINNextLTPro', sans-serif;
+    font-size: 0.5rem;
+    border: 2px solid whitesmoke;
+    z-index: 99;
+    opacity: 0;
+}
+
+#mm-first-btn {
+    position: absolute;
+    top: 74%;
+    left: 20%;
+}
+
+#mm-first-info {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top:71%;
+    left: 20%;
+    padding: 0.5vmin 0.5vmin 0.5vmin 2vmin;
+}
+
+#mm-second-btn {
+    position: absolute;
+    top: 21%;
+    left: 33%;
+}
+
+#mm-second-info {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top:17.5%;
+    left: 33%;
+    padding: 0.5vmin 0.5vmin 0.5vmin 2vmin;
+}
+
+/* Textbox visibility */
+.mm-visibility {
+    transition: opacity 1s ease;
+    opacity: 1;
+ }
+
+/* Button animation */
+@keyframes pulse {
+    from { 
+        outline: 0px solid #de0466;
+    }
+    to {
+        outline: 3px solid #de0466;
+        outline-offset: 4px;
+    }
+}
+
+ /* Media queries */
+
+ @media only screen and (min-width: 481px ) {
+    .mm-all-info {
+        font-size: 0.7rem;
+        
+    }
+    .mm-all-btn {
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+ }
+
+ @media only screen and (min-width: 769px ) {
+    .mm-all-info {
+        font-size: 0.9rem;
+    }
+    .mm-all-btn {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+ }
+
+ @media only screen and (min-width: 1025px ) {
+    .mm-all-info {
+        font-size: 1.1rem;
+    }
+    .mm-all-btn {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+ }
+
+ @media only screen and (min-width: 1201px ) {
+    .mm-all-info {
+        font-size: 1.3rem;
+    }
+    .mm-all-btn {
+        height: 2rem;
+        width: 2rem;
+    }
+ }
