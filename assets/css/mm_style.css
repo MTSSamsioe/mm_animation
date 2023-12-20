@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'DINNextLTPro';
+    font-family: 'uniFont';
     src: url(/assets/fonts/DINNextLTPro-Regular.otf);
 }
 /* Animation container */
@@ -10,7 +10,7 @@
 }
 
 .mm-h1 {
-    font-family: 'DINNextLTPro', sans-serif;
+    font-family: 'uniFont';
     padding: 0;
     margin: 0 auto;
     line-height: 1.8;
@@ -35,7 +35,7 @@
 .mm-all-info {
     background-color: whitesmoke;
     color: black;
-    font-family: 'DINNextLTPro', sans-serif;
+    font-family: 'uniFont';
     font-size: 0.5rem;
     border: 2px solid whitesmoke;
     z-index: 99;
