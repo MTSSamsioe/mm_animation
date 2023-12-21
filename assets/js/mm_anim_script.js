@@ -8,7 +8,7 @@ let mmAnimation = bodymovin.loadAnimation({
 });
 
 // Animation segments
-let frameSegments =  [[0,199], [199,300]];
+let frameSegments =  [[0,199], [199,399], [399,600], [600,799], [799,996], [996,1195]];
 
 // Buttons and info divs
 const mmButtons = document.querySelectorAll('.mm-all-btn');
@@ -40,7 +40,23 @@ mmAnimation.addEventListener("DOMLoaded", () => {
                 
                 document.getElementById('mm-second-info').classList.toggle('mm-visibility');
     
-            } 
+            } else if (mmButtonPressed === 'mm-third-btn'){
+                mmAnimation.playSegments(frameSegments[2], true);
+                
+                document.getElementById('mm-third-info').classList.toggle('mm-visibility');
+            } else if (mmButtonPressed === 'mm-fourth-btn'){
+                mmAnimation.playSegments(frameSegments[3], true);
+                
+                document.getElementById('mm-fourth-info').classList.toggle('mm-visibility');
+            } else if (mmButtonPressed === 'mm-fith-btn'){
+                mmAnimation.playSegments(frameSegments[4], true);
+                
+                document.getElementById('mm-fith-info').classList.toggle('mm-visibility');
+            } else if (mmButtonPressed === 'mm-sixth-btn'){
+                mmAnimation.playSegments(frameSegments[5], true);
+                
+                document.getElementById('mm-sixth-info').classList.toggle('mm-visibility');
+            }
             
           });
         });

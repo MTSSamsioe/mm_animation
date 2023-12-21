@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'uniFont';
-    src: url(../assets/fonts/DINNextLTPro-Regular.otf) format('opentype') local('uniFont');
+    src: url(../fonts/DINNextLTPro-Regular.otf) format('opentype');
 }
 /* Animation container */
 #tanim{
@@ -9,70 +9,136 @@
     position: relative;
 }
 
+
+/* Classes */
+
 .mm-h1 {
     font-family: 'uniFont', sans-serif;
     padding: 0;
-    margin: 0 auto;
-    line-height: 1.8;
+    margin: 0;
     color: whitesmoke;
     font-size: 1.4vh;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .mm-all-btn{
     height: 2.5vh;
     width: 2.5vh;
+    line-height: 2.5vh;
+    text-align: center;
     cursor: pointer;
     border-radius: 50%;
     animation: pulse 1.5s infinite;
     background: #de0466;
-    z-index: 999;
-    transform: translate(-50%, -50%);
+    z-index: 3;
+    
 }
 
 .mm-all-info {
-    height: auto;
+    height: 2.5vh;
     width: auto;
     background-color: whitesmoke;
     color: black;
     font-family: 'uniFont', sans-serif;
     font-size: 0.9vh;
-    z-index: 99;
+    z-index: 2;
     opacity: 0;
-    padding: 0.1vh 0.1vh 0.1vh 2vh;
-}
-
-#mm-first-btn {
-    position: absolute;
-    top: 74%;
-    left: 20%;
-}
-
-#mm-first-info {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top:71%;
-    left: 20%;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0vw 2vw 0vw 6.5vw;
     
 }
+
+.mm-all-econtainer{
+    position: absolute;
+    z-index: 1;
+}
+
+/* ID containers */
+
+/* First section */
+#mm-first-btn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#mm-econtainer-1 {
+    position: absolute;
+    top:70%;
+    left: 21.3%;
+}
+
+/* Second section */
 
 #mm-second-btn {
     position: absolute;
-    top: 21%;
-    left: 33%;
+    top: 0px;
+    left: 0px;
 }
 
-#mm-second-info {
-    width: auto;
-    height: auto;
+#mm-econtainer-2 {
     position: absolute;
-    top:18%;
-    left: 33%;
-    
+    top:15%;
+    left: 20%;
 }
+
+/* Third section */
+
+#mm-third-btn {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#mm-econtainer-3 {
+    position: absolute;
+    top:17%;
+    left:59%;
+}
+/* Fourth section */
+
+#mm-fourth-btn {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#mm-econtainer-4 {
+    position: absolute;
+    top:3%;
+    left:68%;
+}
+/* Fith section */
+
+#mm-fith-btn {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#mm-econtainer-5 {
+    position: absolute;
+    top:46%;
+    left:49%;
+}
+/* Sixth section */
+
+#mm-sixth-btn {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#mm-econtainer-6 {
+    position: absolute;
+    top:81%;
+    left:66%;
+}
+
+
 
 /* Textbox visibility */
 .mm-visibility {
@@ -81,82 +147,84 @@
  }
 
 /* Button animation */
+
 @keyframes pulse {
-    from { 
-        outline: 0px solid #de0466;
+    0% {
+      transform:(scale(.9));
     }
-    to {
-        outline: 3px solid #de0466;
-        outline-offset: 4px;
+    70% {
+      transform:(scale(1));
+      box-shadow: 0 0 0 0.7vh rgba(222, 4, 102, 0.5);
+      
     }
-}
+      100% {
+      transform:(scale(.9));
+      box-shadow: 0 0 0 0 rgba(222, 4, 102, 0);
+      
+    }
+  }
 
  /* Media queries */
 
  @media only screen and (min-width: 481px ) {
     .mm-all-info {
+        height: 3vh;
         font-size: 1vh;
-        padding: 0.3vh 0.3vh 0.3vh 2vh;
     }
     .mm-all-btn {
-        height: 2.5vh;
-        width: 2.5vh;
+        height: 3vh;
+        line-height: 3vh;
+        width: 3vh;
     }
     .mm-h1 {
         font-size: 1.5vh;
-        line-height: 1.8;
-
     }
-
  }
 
  @media only screen and (min-width: 769px ) {
     .mm-all-info {
+        height: 3.5vh;
         font-size: 1.5vh;
-        padding: 0.4vh 0.4vh 0.4vh 3vh;
     }
     .mm-all-btn {
         height: 3.5vh;
         width: 3.5vh;
-        line-height: 1.8;
+        line-height: 3.5vh;
     }
-
     .mm-h1 {
         font-size: 1.8vh;
     }
-
  }
 
  @media only screen and (min-width: 1025px ) {
     .mm-all-info {
+        height: 4vh;
         font-size: 2vh;
-        padding: 0.4vh 0.4vh 0.4vh 3vh;
     }
     .mm-all-btn {
         height: 4vh;
         width: 4vh;
-        line-height: 1.8;
+        line-height: 4vh;
     }
-
     .mm-h1 {
         font-size: 2.5vh;
-        line-height: 1.8;
     }
  }
 
  @media only screen and (min-width: 1201px ) {
     .mm-all-info {
+        height: 5vh;
         font-size: 2.5vh;
-        padding: 0.4vh 0.4vh 0.4vh 3.5vh;
+        
     }
     .mm-all-btn {
         height: 5vh;
         width: 5vh;
-        line-height: 1.8;
+        line-height: 5vh;
     }
 
     .mm-h1 {
         font-size: 3vh;
-        line-height: 1.8;
+        
     }
 }
