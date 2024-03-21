@@ -56,6 +56,8 @@ mmAnimation.addEventListener("DOMLoaded", () => {
                 mmAnimation.playSegments(frameSegments[5], true);
                 
                 document.getElementById('mm-sixth-info').classList.toggle('mm-visibility');
+            } else {
+                console.log('No button pressed with the correct id')
             }
             
           });

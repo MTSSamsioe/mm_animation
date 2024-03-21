@@ -2,189 +2,133 @@
     font-family: 'uniFont';
     src: url(../fonts/DINNextLTPro-Regular.otf) format('opentype');
 }
+/* (REMOVE BODY PROPERTY  ) */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Animation container */
 #tanim{
     max-width: 3000px;
-    margin: 0 auto;
     position: relative;
+    background-color: #0d4f8a;
 }
 
+/* Text box in bottom */
+#mm-text-box {
+    padding-bottom: 0.5vh;
+    z-index: 99;
+    height: 3.5vw;
+    width: auto;
+    background-color: #0d4f8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Classes */
+/* Number in buttons */
 
 .mm-h1 {
     font-family: 'uniFont', sans-serif;
-    /* padding: 0;
-    margin: 0; */
-    color: whitesmoke;
-    font-size: 1.4vh;
-    text-align: center;
+    color: #ecf6fe;
+    font-size: 1.4vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* All Buttonns in animation */
+
 .mm-all-btn{
-    height: 2.5vh;
-    width: 2.5vh;
-    /* line-height: 2.5vh; */
+    height: 2.5vw;
+    width: 2.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
     animation: pulse 1.5s infinite;
     background: #de0466;
-    z-index: 3;
+    z-index: 99;
     
 }
 
-.mm-all-info {
-    height: auto;
-    background-color: whitesmoke;
-    color: black;
-    font-family: 'uniFont', sans-serif;
-    line-height: 2.5vh;
-    font-size: 1vh;
-    z-index: 1;
-    opacity: 0;
+/* Single buttons in animation */
+
+#mm-first-btn {
+    position: absolute;
+    top:44%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#mm-second-btn {
+    position: absolute;
+    top:15%;
+    left: 7%;
+}
+
+#mm-third-btn {
+    position: absolute;
+    top:15%;
+    left:41.5%;
+}
+
+#mm-fourth-btn {
+    position: absolute;
+    top:15%;
+    left:71%;
+}
+
+#mm-fith-btn {
+    position: absolute;
+    top: 60%;
+    left: 85%;
+}
+
+#mm-sixth-btn {
+    position: absolute;
+    top:76%;
+    left:50%;
+}
+/* Text and buttons under the animation */
+
+.mm-all-text-btn {
+    height: 2.5vw;
+    width: 2.5vw;
+    background: #de0466;
+    z-index: 99;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     
+    text-align: center;
 }
 
-.mm-all-econtainer{
-    position: absolute;
-    z-index: 1;
+.mm-all-info {
+    height: auto;
+    color: #ecf6fe;
+    font-family: 'uniFont', sans-serif;
+    font-size: 2vw;
+    z-index: 99;
+    display: none;
+   
 }
 
-/* ID containers */
-
-/* First section */
-#mm-first-btn {
-    position: absolute;
-    top: -2vh;
-    left: -2vh;
+.mm-all-text-bottom {
+    padding-left: 1vw;
 }
 
-#mm-econtainer-1 {
-    position: absolute;
-    top:49%;
-    left: 20%;
-    width: auto;
-}
-
-#mm-first-info {
-    padding: 0vw 1vw 0vw 2vw;
-    
-}
-
-/* Second section */
-
-#mm-second-btn {
-    position: absolute;
-    top: -2vh;
-    left: -2vh;
-}
-
-#mm-econtainer-2 {
-    position: absolute;
-    top:19%;
-    left: 8%;
-    width: 20%;
-    
-}
-
-#mm-second-info {
-    /* border-radius: 15px 0 0 0; */
-    /* height: auto; */
-    padding: 0vw 1vw 0vw 2vw;
-}
-
-/* Third section */
-
-#mm-third-btn {
-    position: absolute;
-    top:-2vh;
-    right:-2vh;
-}
-
-#mm-econtainer-3 {
-    position: absolute;
-    top:19%;
-    right:68%;
-    width: 30%;
-    
-}
-
-#mm-third-info {
-    padding: 1vw 2vw 0vw 0.5vw;
-    
-}
-
-/* Fourth section */
-
-#mm-fourth-btn {
-    position: absolute;
-    bottom: -2vh;
-    left:-2vh;
-}
-
-#mm-econtainer-4 {
-    position: absolute;
-    bottom:82%;
-    left:53%;
-}
-
-#mm-fourth-info {
-    padding: 0vw 1vw 0vw 2vw;
-    width: 90%;
-}
-
-/* Fith section */
-
-#mm-fith-btn {
-    position: absolute;
-    bottom: -2vh;
-    right: -2vh;
-}
-
-#mm-econtainer-5 {
-    position: absolute;
-    bottom: 34%;
-    right: 18%;
-    
-}
-
-#mm-fith-info {
-    padding: 0vw 2vw 0vw 1vw;
-}
-
-/* Sixth section */
-
-#mm-sixth-btn {
-    position: absolute;
-    top:-2vh;
-    left:-2vh;
-}
-
-#mm-econtainer-6 {
-    position: absolute;
-    top:72%;
-    left:46%;
-    width: auto;
-}
-
-#mm-sixth-info {
-    padding: 0vw 1vw 0vw 2vw;
-}
 
 /* Textbox visibility */
 .mm-visibility {
-    transition: opacity 1s ease;
-    opacity: 1;
+    transition: opacity 3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
 /* Button animation */
@@ -207,15 +151,15 @@
 
  /* Media queries */
 
- @media only screen and (min-width: 481px ) {
+ /* @media only screen and (min-width: 481px ) {
     .mm-all-info {
-        /* height: 3vh; */
+        
         font-size: 1vh;
-        /* line-height: 1.5vh; */
+        
     }
     .mm-all-btn {
         height: 3vh;
-        /* line-height: 3vh; */
+        
         width: 3vh;
     }
     .mm-h1 {
@@ -225,7 +169,7 @@
 
  @media only screen and (min-width: 769px ) {
     .mm-all-info {
-        /* height: 3.5vh; */
+        
         font-size: 1.5vh;
     }
     .mm-all-btn {
@@ -240,7 +184,7 @@
 
  @media only screen and (min-width: 1025px ) {
     .mm-all-info {
-        /* height: 4vh; */
+        
         font-size: 2vh;
     }
     .mm-all-btn {
@@ -255,7 +199,7 @@
 
  @media only screen and (min-width: 1201px ) {
     .mm-all-info {
-        /* height: 5vh; */
+        
         font-size: 2.5vh;
         
     }
@@ -269,4 +213,4 @@
         font-size: 3vh;
         
     }
-} 
+}  */
